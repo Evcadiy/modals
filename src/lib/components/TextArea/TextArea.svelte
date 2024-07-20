@@ -4,10 +4,9 @@
   export let placeholder = ""
   export let value = ""
   export let label = ""
-  export let type = ""
   export let variant = ""
-  export let inputClassName = ""
-  export let inputName = ""
+  export let textareaClassName = ""
+  export let textareaName = ""
   export let labelClassName = ""
   export let containerClassName = ""
   export let handleChange = () => {}
@@ -18,39 +17,30 @@
   export let iconSrc = ""
   export let iconAlt = ""
   export let errorMsg = ""
-  export let readonly = false
   export let errorMsgAbsolute = false
 
-  // Workaround to avoid error when passing type directly as a prop to input
-  function typeAction(node) {
-    node.type = type
-  }
-
-  // When error message is passed set a "error" className to the input
+  // When error message is passed set a "error" className to the textarea
   $: errorClassName = Boolean(errorMsg) ? "error" : ""
 </script>
 
 {#if label}
   <p class={`${labelClassName} label`}>{label}</p>
 {/if}
-<div class={`${containerClassName} inputContainer`}>
+<div class={`${containerClassName} textareaContainer`}>
   {#if iconSrc}
-    <img class="input-icon" src={iconSrc} alt={iconAlt} />
+    <img class="textarea-icon" src={iconSrc} alt={iconAlt} />
   {/if}
-  <input
-    use:typeAction
-    name={inputName}
+  <textarea
+    name={textareaName}
     {placeholder}
     autocomplete="off"
     bind:value
-    class={`input ${variant} ${inputClassName} ${errorClassName}`}
-    class:noIcon={!iconSrc}
+    class={`textarea ${variant} ${textareaClassName} ${errorClassName}`}
     on:change={handleChange}
     on:blur={handleBlur}
     on:focus={handleFocus}
     on:keydown={handleKeyDown}
     on:click={handleClick}
-    {readonly}
   />
 </div>
 {#if errorMsg}
@@ -77,21 +67,25 @@
     margin-top: 0px !important;
     position: absolute;
   }
-  .inputContainer {
+  .textareaContainer {
     position: relative;
   }
-  .input {
+  .textarea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     outline: none;
     border-bottom: 3px solid #ffffff00;
     transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
-  .input:focus {
+  .textarea:focus {
   }
-  .input.error {
+  .textarea.error {
     border-bottom: none;
     box-shadow: 0 0 0 1px #ea2e49 !important;
   }
-  .input-icon {
+  .textarea-icon {
     position: absolute;
     left: 1.25rem;
     top: 50%;
@@ -102,12 +96,11 @@
 
   .primary {
     color: #606266;
-    line-height: 40px;
     border: 1px solid #dcdfe6;
-    height: 50px;
-    padding: 0 40px;
+    min-height: 50px;
+    padding: 10px 16px;
     font-size: 14px;
-    min-width: 100%;
+    width: 100%;
   }
   .primary::placeholder {
     color: #606266;
@@ -115,20 +108,14 @@
   }
 
   /* Chrome, Safari, Edge, Opera */
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
+  textarea::-webkit-outer-spin-button,
+  textarea::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
 
-  input[type="date"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    min-width: 95%;
-  }
-
-  .noIcon {
-    padding-left: 16px;
-    padding-right: 16px;
+  /* Firefox */
+  textarea[type="number"] {
+    -moz-appearance: textfield;
   }
 </style>

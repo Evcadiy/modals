@@ -8,6 +8,7 @@
   export let isModalOpen = false
   export let isCentered = false
   export let className = ""
+  export let containerClassName = ""
   export let backgroundOverlay = defaultModalOverlayColor
 
   const closeModal = (): void => {
@@ -25,13 +26,15 @@
       out:fade={{ duration: 300 }}
       style={`background-color: ${backgroundOverlay}`}
     >
-      <div
-        class={`modal ${className}`}
-        on:click|stopPropagation
-        transition:scale={{ duration: 300 }}
-        class:centered={isCentered}
-      >
-        <slot />
+      <div class={`modalContainer ${containerClassName}`}>
+        <div
+          class={`modal ${className}`}
+          on:click|stopPropagation
+          transition:scale={{ duration: 300 }}
+          class:centered={isCentered}
+        >
+          <slot />
+        </div>
       </div>
     </div>
   </div>
@@ -48,6 +51,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .modalContainer {
+    display: flex;
+    position: relative;
+    height: 100%;
   }
   .modal {
     position: relative;

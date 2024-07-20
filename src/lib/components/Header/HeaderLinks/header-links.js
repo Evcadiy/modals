@@ -3,12 +3,12 @@ export const headerLinks = [
   {
     title: 'HOME',
   },
-  // {
-  //   title: 'COCK BOXING',
-  // },
-  // {
-  //   title: 'HORSE RACING',
-  // },
+  {
+    title: 'COCK BOXING',
+  },
+  {
+    title: 'HORSE RACING',
+  },
   {
     title: 'TABLE GAMES',
   },

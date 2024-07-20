@@ -1,8 +1,9 @@
 <script>
+  import { userState } from "../../../stores/userStore"
   export let game
 </script>
 
-<a href={game.link}>
+<a href={game.link[$userState.playerIndex]}>
   <li
     class="group h-full w-full shadow-md hover:shadow-lg ring-offset-2 outline-none focus:ring-cardinal-500/40 focus:ring-2 rounded-xl overflow-hidden border border-gray-300 bg-white flex flex-col hover:scale-105 transition-all duration-200 cursor-pointer"
   >
