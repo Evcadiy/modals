@@ -9,11 +9,11 @@ import snakeArena from "../../../assets/images/new-thumbnails/Snake Arena.png"
 import taiXiu from "../../../assets/images/new-thumbnails/Tai Xiu.png"
 
 export const games = [
-  {
-    title: "Cock Boxing",
-    thumbnail: cockBoxing,
-    link: ["https://139.180.146.198"]
-  },
+  // {
+  //   title: "Cock Boxing",
+  //   thumbnail: cockBoxing,
+  //   link: ["https://139.180.146.198"]
+  // },
   {
     title: "FPC",
     thumbnail: fpc,
@@ -38,16 +38,16 @@ export const games = [
       "https://g.autumninteractive.com/hilo/?token=FlC-Vx8sYr_fPCb--hR83-ZvydviAbfhzzEsVWzGmgM"
     ]
   },
-  {
-    title: "Horse Racing Virtual 03",
-    thumbnail: horseRacingVirtual03,
-    link: ["https://www.unodosph.vip/"]
-  },
-  {
-    title: "Horse Racing",
-    thumbnail: horseRacing,
-    link: ["https://www.unodosph.vip/"]
-  },
+  // {
+  //   title: "Horse Racing Virtual 03",
+  //   thumbnail: horseRacingVirtual03,
+  //   link: ["https://www.unodosph.vip/"]
+  // },
+  // {
+  //   title: "Horse Racing",
+  //   thumbnail: horseRacing,
+  //   link: ["https://www.unodosph.vip/"]
+  // },
   {
     title: "Rocket",
     thumbnail: rocket,
