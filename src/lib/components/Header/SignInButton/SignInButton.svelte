@@ -1,7 +1,7 @@
 <script>
   import mobileSigninIcon from "../../../../assets/icons/sign-in.png"
   import { toggleModalState } from "../../../stores/modalsStore"
-  import { setUserState, userState } from "../../../stores/userStore"
+  import { logoutUser, setUserState, userState } from "../../../stores/userStore"
 
   const onButtonClick = () => {
     if ($userState.user) {
