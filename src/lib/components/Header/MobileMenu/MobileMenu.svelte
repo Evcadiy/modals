@@ -2,7 +2,7 @@
   import { currentLanguage } from "../../../stores/languageStore"
   import { menuOpen, setMobileMenu } from "../../../stores/mobileMenuStore"
   import { toggleModalState } from "../../../stores/modalsStore"
-  import { setUserState, userState } from "../../../stores/userStore"
+  import { logoutUser, setUserState, userState } from "../../../stores/userStore"
 
   $: menuOptions = [
     { title: "Home" },
@@ -29,7 +29,7 @@
   }
 
   const onLogoutClick = (e: MouseEvent) => {
-    setUserState(null)
+    logoutUser()
     onOptionClick(e)
   }
 </script>

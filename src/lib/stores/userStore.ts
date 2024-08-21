@@ -59,3 +59,10 @@ export const setIsTestUser = (isTestUser: boolean) => {
     return { ...state, isTestUser }
   })
 }
+
+export const logoutUser = () => {
+  localStorage.removeItem("token")
+  userState.update((state) => {
+    return { ...state, isTestUser: false, playerIndex: 0, user: null }
+  })
+}

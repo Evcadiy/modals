@@ -5,7 +5,7 @@
 
   const onButtonClick = () => {
     if ($userState.user) {
-      setUserState(null)
+      logoutUser()
     } else {
       toggleModalState("isAuthModalOpen", true)
     }
