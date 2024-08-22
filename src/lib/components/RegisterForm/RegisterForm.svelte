@@ -97,7 +97,7 @@
 
   const handleSubmit = (event: SubmitEvent) => {
     event.preventDefault()
-    // if (!validate()) return
+    if (!validate()) return
     handleRegister()
   }
 
