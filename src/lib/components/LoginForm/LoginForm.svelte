@@ -83,6 +83,8 @@
 
         const userInfo = await wallet.member.me(authInfo.token)
 
+        wallet.setBearerToken(authInfo?.token)
+
         if (userInfo.username) {
           setUserState(userInfo)
         }

@@ -7,20 +7,24 @@
   import { setUserState } from "../lib/stores/userStore"
   import { browser } from "$app/environment"
 
-  // Refresh user info on mount
-
   onMount(() => {
     const token: string | null = localStorage.getItem("token")
 
     const fetchMyUser = async () => {
-      const userInfo = await wallet.member.me(token!)
-      if (userInfo.username) {
-        setUserState(userInfo)
+      try {
+        const userInfo = await wallet.member.me(token!)
+
+        if (userInfo.username) {
+          setUserState(userInfo)
+        }
+      } catch (error) {
+        console.log(error)
       }
     }
 
     if (token) {
       fetchMyUser()
+      wallet.setBearerToken(token)
     }
   })
 
@@ -37,7 +41,7 @@
    * back to the game client to make sure that ONLY game origin can receive the message.
    */
 
-  function onMessage(event: MessageEvent<any>) {
+  async function onMessage(event: MessageEvent<any>) {
     const userToken = localStorage.getItem("token")
 
     if (!userToken) return
@@ -46,6 +50,25 @@
       // very important! this is to prevent any untrusted source from sending messages to this window
       return
     }
+
+    const fetchMyWallets = async () => {
+      try {
+        const uri: string | null = localStorage.getItem("uri")
+        if (!uri) return
+        const userWallets = await wallet.wallet.getMemberWallets(uri!)
+
+        if (userWallets?.length) {
+          return userWallets
+        }
+        return null
+      } catch (error) {
+        console.log(error)
+      }
+    }
+
+    const userHasWallets = await fetchMyWallets()
+
+    if (!userHasWallets) return
 
     if (event.data.type == "request_token") {
       event.source?.postMessage(

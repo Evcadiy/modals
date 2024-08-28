@@ -1,7 +1,14 @@
 <script>
   import mobileSigninIcon from "../../../../assets/icons/sign-in.png"
   import { toggleModalState } from "../../../stores/modalsStore"
-  import { logoutUser, setUserState, userState } from "../../../stores/userStore"
+  import {
+    logoutUser,
+    setUserState,
+    userState
+  } from "../../../stores/userStore"
+
+  $: label = $userState.user ? $userState.user.username : "Sign in"
+
 
   const onButtonClick = () => {
     if ($userState.user) {
@@ -13,7 +20,7 @@
 </script>
 
 <button class="header-button" on:click={onButtonClick}>
-  {$userState.user ? $userState.user.username : "Sign in"}
+  {label}
   <img src={mobileSigninIcon} alt="sign-in-button" class="header-button-icon" />
 </button>
 
