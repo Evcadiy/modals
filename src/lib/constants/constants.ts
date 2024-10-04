@@ -1,1 +1,0 @@
-export const defaultModalOverlayColor = "rgba(0, 0, 0, 0.7);"
