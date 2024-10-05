@@ -1,7 +1,7 @@
 <script>
+  import FirstModal from "$lib/components/Modals/FirstModal.svelte"
 </script>
 
-<section class="bg-background-primary"></section>
-
-<style>
-</style>
+<section class="flex items-center justify-center h-screen bg-opacity-50">
+  <FirstModal />
+</section>
