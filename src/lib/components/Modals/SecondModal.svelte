@@ -39,7 +39,7 @@
         on your next order over $50
       </SubText>
 
-      <Button class="black" />
+      <Button class="bg-black text-white py-4" />
 
       <FooterText class="text-black pt-[32px]">
         offer valid until 24th march, 2021
