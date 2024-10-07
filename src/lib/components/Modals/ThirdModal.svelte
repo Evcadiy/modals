@@ -28,13 +28,13 @@
       >······· off ·······</MidText
     >
 
-    <SubText class="text-white pb-[24px] xl:pb-[52px]">
+    <SubText class="text-white pb-[35px] md:pb-[20px]  xl:pb-[52px]">
       on your next order over $50
     </SubText>
 
     <Button class="bg-white text-black py-1 sm:py-4" />
 
-    <FooterText class="text-white pt-[24px] lg:pt-[32px]">
+    <FooterText class="text-white pt-[35px] md:pt-[18px] lg:pt-[32px]">
       offer valid until 24th march, 2021
     </FooterText>
   </div>
