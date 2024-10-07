@@ -4,7 +4,7 @@
 </script>
 
 <p
-  class={`uppercase text-center text-text-sm_eb 
+  class={`uppercase text-text-sm_eb 
   md:text-text-lg
   xl:text-text-xl
   ${className}`}

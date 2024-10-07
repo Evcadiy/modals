@@ -6,7 +6,7 @@
   import FooterText from "$lib/components/FooterText/FooterText.svelte"
 </script>
 
-<section>
+<section class="flex items-center justify-center">
   <div
     class="bg-image p-8 rounded-2xl shadow-lg w-[330px] h-[474px]
     sm:w-[576px]
@@ -16,7 +16,7 @@
     2xl:w-[1400px]"
   >
     <HeadingText
-      class="text-white pt-[56px] pb-[24px] 
+      class="text-white text-center pt-[56px] pb-[24px] 
       md:py-[24px] 
       lg:py-[44px]
       xl:py-[56px]"
@@ -24,15 +24,17 @@
       run with the pack
     </HeadingText>
 
-    <BigText class="text-white md:pt-[24px] lg:pb-[32px]">get 20% off</BigText>
+    <BigText class="text-white text-center  md:pt-[24px] lg:pb-[32px]"
+      >get 20% off</BigText
+    >
 
-    <SubText class="text-white pb-[24px] xl:pb-[32px]">
+    <SubText class="text-white text-center pb-[24px] xl:pb-[32px]">
       on your next order over $50
     </SubText>
 
-    <Button class="bg-white text-black py-4" />
+    <Button class="bg-white text-center  text-black py-4" />
 
-    <FooterText class="text-white pt-[24px]">
+    <FooterText class="text-white text-center  pt-[24px]">
       offer valid until 24th march, 2021
     </FooterText>
   </div>

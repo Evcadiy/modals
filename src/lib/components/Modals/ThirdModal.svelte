@@ -7,7 +7,7 @@
   import MidText from "$lib/components/MidText/MidText.svelte"
 </script>
 
-<section>
+<section class="flex items-center justify-center">
   <div
     class="bg-image p-10 rounded-2xl shadow-lg w-[330px] h-[474px]
     sm:w-[576px]
@@ -17,24 +17,32 @@
     2xl:w-[1400px]"
   >
     <HeadingText
-      class="text-white pt-[24px] pb-[32px] md:py-[10px] lg:py-[44px]"
+      class="text-white text-center pt-[24px] pb-[32px] md:py-[10px] lg:py-[44px]"
     >
       run with the pack
     </HeadingText>
 
-    <MidText class=" text-white md:pt-[24px]">······· get ·······</MidText>
-    <BigText class="text-white lg:text-+text-8xl xl:text-9xl">20%</BigText>
-    <MidText class="text-white pb-[24px] lg:pb-[72px]"
+    <MidText class=" text-white text-center md:pt-[24px]"
+      >······· get ·······</MidText
+    >
+    <BigText class="text-white text-center lg:text-+text-8xl xl:text-9xl"
+      >20%</BigText
+    >
+    <MidText class="text-white text-center pb-[24px] lg:pb-[72px]"
       >······· off ·······</MidText
     >
 
-    <SubText class="text-white pb-[35px] md:pb-[20px]  xl:pb-[52px]">
+    <SubText
+      class="text-white text-center pb-[35px] md:pb-[20px]  xl:pb-[52px]"
+    >
       on your next order over $50
     </SubText>
 
-    <Button class="bg-white text-black py-1 sm:py-4" />
+    <Button class="bg-white text-center text-black py-1 sm:py-4" />
 
-    <FooterText class="text-white pt-[35px] md:pt-[18px] lg:pt-[32px]">
+    <FooterText
+      class="text-white text-center pt-[35px] md:pt-[18px] lg:pt-[32px]"
+    >
       offer valid until 24th march, 2021
     </FooterText>
   </div>

@@ -6,4 +6,8 @@
   .bg-image {
     @apply bg-[url("../assets/images/bgImage.png")] bg-cover bg-center;
   }
+
+  .bg-image-2 {
+    @apply bg-[url("../assets/images/bgImage2.png")];
+  }
 }

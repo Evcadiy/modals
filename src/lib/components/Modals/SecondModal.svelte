@@ -29,19 +29,19 @@
 			2xl:w-[70%]"
     >
       <HeadingText
-        class="text-black pt-[8px] pb-[24px] md:pt-[24px] md:pb-0 lg:pt-[80px]"
+        class="text-black text-center pt-[8px] pb-[24px] md:pt-[24px] md:pb-0 lg:pt-[80px]"
         >run with the pack</HeadingText
       >
 
-      <BigText class="text-black md:pt-[24px]">get 20% off</BigText>
+      <BigText class="text-black text-center md:pt-[24px]">get 20% off</BigText>
 
-      <SubText class="text-black pb-[24px] xl:pb-[44px]">
+      <SubText class="text-black text-center pb-[24px] xl:pb-[44px]">
         on your next order over $50
       </SubText>
 
-      <Button class="bg-black text-white py-4" />
+      <Button class="bg-black text-white text-center py-4" />
 
-      <FooterText class="text-black pt-[32px]">
+      <FooterText class="text-black text-center pt-[32px]">
         offer valid until 24th march, 2021
       </FooterText>
     </div>
