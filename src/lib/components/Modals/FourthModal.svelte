@@ -13,11 +13,12 @@
     w-[330px] h-[474px]
     sm:w-[576px]
     md:w-[726px] md:h-[620px]
-    lg:w-[942px] lg:h-[942px]"
+    lg:w-[942px]
+    2xl:h-[942px]"
   >
     <div class="p-8 pt-2 w-full h-[50%]">
       <HeadingText
-        class="text-white pt-[8px] pb-[24px] md:pt-[24px] md:pb-0 lg:pt-[80px]"
+        class="text-white pt-[8px] pb-[24px] md:pt-[24px] md:pb-0 lg:pt-[40px] 2xl:pt-[80px]"
         >run with the pack</HeadingText
       >
 
