@@ -1,7 +1,7 @@
 <script>
   import FirstModal from "$lib/components/Modals/FirstModal.svelte"
   import SecondModal from "$lib/components/Modals/SecondModal.svelte"
-
+  import ThirdModal from "$lib/components/Modals/ThirdModal.svelte"
   let activeModal = null
 
   const showModal = (modal) => {
@@ -43,5 +43,7 @@
     <FirstModal />
   {:else if activeModal === "second"}
     <SecondModal />
+  {:else if activeModal === "third"}
+    <ThirdModal />
   {/if}
 </section>
