@@ -6,7 +6,7 @@
   import FooterText from "$lib/components/FooterText/FooterText.svelte"
 </script>
 
-<section class="flex items-center justify-center">
+<section class="flex h-screen items-center justify-center">
   <div
     class="flex flex-col md:flex-row bg-white rounded-2xl shadow-lg overflow-hidden
     w-[330px] h-[474px]
@@ -39,7 +39,7 @@
         on your next order over $50
       </SubText>
 
-      <Button class="bg-black text-white text-center py-4" />
+      <Button class="bg-black text-white text-center py-2 md:py-4" />
 
       <FooterText class="text-black text-center pt-[32px]">
         offer valid until 24th march, 2021

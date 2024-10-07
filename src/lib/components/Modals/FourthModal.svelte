@@ -4,12 +4,12 @@
   import Button from "$lib/components/Button/Button.svelte"
   import SubText from "$lib/components/SubText/SubText.svelte"
   import FooterText from "$lib/components/FooterText/FooterText.svelte"
-  import DiscountButton from "../DiscountButton/DiscountButton.svelte"
+  import ArrowButton from "$lib/components/ArrowButton/ArrowButton.svelte"
 </script>
 
-<section class="flex items-center justify-center">
+<section class="flex h-screen items-center justify-center">
   <div
-    class="bg-image-2 flex-row my-4 bg-white rounded-2xl shadow-lg overflow-hidden
+    class="bg-image-2 flex-row bg-white rounded-2xl shadow-lg overflow-hidden
     w-[330px] h-[474px]
     sm:w-[576px]
     md:w-[726px] md:h-[620px]
@@ -32,7 +32,7 @@
         <FooterText class="text-white pt-[12px]">
           offer valid until 24th march, 2021
         </FooterText>
-        <DiscountButton />
+        <ArrowButton />
       </div>
     </div>
     <div class="bg-image w-full h-[50%]" />

@@ -7,7 +7,7 @@
   import MidText from "$lib/components/MidText/MidText.svelte"
 </script>
 
-<section class="flex items-center justify-center">
+<section class="flex h-screen items-center justify-center">
   <div
     class="bg-image p-10 rounded-2xl shadow-lg w-[330px] h-[474px]
     sm:w-[576px]
