@@ -37,11 +37,3 @@
     </FooterText>
   </div>
 </section>
-
-<style>
-  .bg-image {
-    background-image: url("../../../assets/images/bgImage.png");
-    background-size: cover;
-    background-position: center;
-  }
-</style>

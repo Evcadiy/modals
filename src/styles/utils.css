@@ -3,4 +3,7 @@
   .container {
     @apply w-full px-4 mx-auto;
   }
+  .bg-image {
+    @apply bg-[url("../assets/images/bgImage.png")] bg-cover bg-center;
+  }
 }
