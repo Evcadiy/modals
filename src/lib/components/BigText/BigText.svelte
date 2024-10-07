@@ -4,7 +4,7 @@
 </script>
 
 <p
-  class={`uppercase text-white text-center text-4xl font-bold
+  class={`uppercase text-center text-4xl font-bold
   sm:text-5xl
   md:text-+text-6xl
   lg:text-+text-7xl
