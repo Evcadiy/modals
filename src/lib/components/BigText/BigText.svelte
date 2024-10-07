@@ -1,6 +1,6 @@
 <script>
-  export let paddingTop = ""
-  export let paddingBottom = ""
+  let className = ""
+  export { className as class }
 </script>
 
 <p
@@ -9,7 +9,7 @@
   md:text-+text-6xl
   lg:text-+text-7xl
   xl:text-+text-8xl
-  ${paddingTop} ${paddingBottom}`}
+  ${className}`}
 >
   <slot />
 </p>

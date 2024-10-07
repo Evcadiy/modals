@@ -16,23 +16,23 @@
     2xl:w-[1400px]"
   >
     <HeadingText
-      paddingTop="pt-[56px] sm:pt-[56px] md:pt-[24px] lg:pt-[44px] xl:pt-[56px]"
-      paddingBottom="pb-[24px] sm:pb-[24px] md:pb-[24px] lg:pb-[44px] xl:pb-[56px]"
+      class="pt-[56px] pb-[24px] 
+      md:py-[24px] 
+      lg:py-[44px]
+      xl:py-[56px]"
     >
       run with the pack
     </HeadingText>
 
-    <BigText paddingTop="md:pt-[24px]" paddingBottom="lg:pb-[32px]">
-      get 20% off
-    </BigText>
+    <BigText class="md:pt-[24px] lg:pb-[32px]">get 20% off</BigText>
 
-    <SubText paddingBottom="pb-[24px] xl:pb-[32px]">
+    <SubText class="pb-[24px] xl:pb-[32px]">
       on your next order over $50
     </SubText>
 
-    <Button backgroundColor="white" />
+    <Button class="white" />
 
-    <FooterText paddingTop="pt-[24px]">
+    <FooterText class="pt-[24px]">
       offer valid until 24th march, 2021
     </FooterText>
   </div>
