@@ -1,4 +1,4 @@
-<div class="absolute top-20 md:top-0 right-0">
+<div class="absolute top-20 sm:top-16 md:top-0 right-0">
   <button
     class="relative button-after z-10 inline-flex items-center justify-center p-2 md:p-4 text-white bg-black border border-transparent"
   >

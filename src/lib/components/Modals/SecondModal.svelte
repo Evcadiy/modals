@@ -6,7 +6,9 @@
   import FooterText from "$lib/components/FooterText/FooterText.svelte"
 </script>
 
-<section class="flex h-screen items-center justify-center">
+<section
+  class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+>
   <div
     class="flex flex-col md:flex-row bg-white rounded-2xl shadow-lg overflow-hidden
     w-[330px] h-[474px]

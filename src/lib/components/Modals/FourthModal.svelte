@@ -7,7 +7,9 @@
   import ArrowButton from "$lib/components/ArrowButton/ArrowButton.svelte"
 </script>
 
-<section class="flex h-screen items-center justify-center">
+<section
+  class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+>
   <div
     class="bg-image-2 flex-row bg-white rounded-2xl shadow-lg overflow-hidden
     w-[330px] h-[474px]

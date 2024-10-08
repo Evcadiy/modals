@@ -7,7 +7,9 @@
   import MidText from "$lib/components/MidText/MidText.svelte"
 </script>
 
-<section class="flex h-screen items-center justify-center">
+<section
+  class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+>
   <div
     class="bg-image p-10 rounded-2xl shadow-lg w-[330px] h-[474px]
     sm:w-[576px]
@@ -38,7 +40,7 @@
       on your next order over $50
     </SubText>
 
-    <Button class="bg-white text-center text-black py-1 sm:py-4" />
+    <Button class="bg-white text-center text-black py-2 sm:py-4" />
 
     <FooterText
       class="text-white text-center pt-[35px] md:pt-[18px] lg:pt-[32px]"

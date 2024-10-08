@@ -10,8 +10,8 @@
   }
 </script>
 
-<section class="flex-1 items-center justify-center h-screen bg-opacity-50">
-  <div class="my-4">
+<section>
+  <div>
     <button
       on:click={() => showModal("first")}
       class="bg-blue-500 text-white py-2 px-4 rounded m-2"
